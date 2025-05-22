@@ -1,0 +1,718 @@
+/* Paleta de cores */
+:root {
+    --azul-escuro: #10454F;
+    --cinza-azulado: #506266;
+    --cinza-medio: #818274;
+    --verde-oliva: #A3AB78;
+    --verde-limao: #BDE038;
+    --branco: #fff;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--cinza-azulado);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: var(--verde-limao);
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--verde-limao);
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--verde-oliva);
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--azul-escuro);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.botao {
+    background-color: var(--verde-limao);
+    color: var(--azul-escuro);
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #a5c61a;
+}
+
+/* Seção Sobre */
+.sobre {
+    padding: 40px 20px;
+    background-color: var(--cinza-azulado);
+    color: var(--branco);
+}
+
+.sobre h3 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.sobre p {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    background-color: var(--cinza-medio);
+    color: var(--branco);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+footer strong {
+    color: var(--verde-limao);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    header {
+        text-align: center;
+    }
+}
+
+/* Estilo para o formulário de contato */
+.form-contato {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    background-color: var(--cinza-azulado);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-contato label {
+    font-weight: bold;
+    color: var(--verde-limao);
+    font-size: 1.1rem;
+}
+
+.form-contato input,
+.form-contato textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--azul-escuro);
+    background-color: var(--branco);
+    transition: box-shadow 0.3s;
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px var(--verde-limao);
+}
+
+.form-contato .botao {
+    align-self: flex-start;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Estilo para a seção de bandas */
+.bandas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: var(--cinza-azulado);
+}
+
+.banda {
+    background-color: var(--branco);
+    color: var(--azul-escuro);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.banda:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.banda img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.banda h3 {
+    font-size: 1.6rem;
+    color: var(--verde-limao);
+    margin-bottom: 10px;
+}
+
+.banda p {
+    font-size: 1rem;
+    color: var(--cinza-azulado);
+}
+
+/* Paleta de cores */
+:root {
+    --azul-escuro: #10454F;
+    --cinza-azulado: #506266;
+    --cinza-medio: #818274;
+    --verde-oliva: #A3AB78;
+    --verde-limao: #BDE038;
+    --branco: #fff;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    line-height: 1.6;
+    padding-bottom: 40px;
+}
+
+/* Header */
+header {
+    background-color: var(--cinza-azulado);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: var(--verde-limao);
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--verde-limao);
+}
+
+/* Seção Hero */
+.hero {
+    background-color: var(--verde-oliva);
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--azul-escuro);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Seções Sobre */
+.sobre {
+    background-color: var(--cinza-azulado);
+    padding: 40px 20px;
+    margin-top: 30px;
+    border-radius: 12px;
+}
+
+.sobre h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--verde-limao);
+}
+
+.sobre p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    font-size: 1.1rem;
+    color: var(--branco);
+}
+
+/* Lista de Top Hits */
+.sobre ul {
+    list-style: none;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+.sobre ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Ícone verde antes do texto */
+.sobre ul li::before {
+    content: "🟢";
+    margin-right: 8px;
+}
+
+/* Vídeo embutido com estilo */
+.sobre > div {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    margin: 20px auto 0 auto;
+    max-width: 800px;
+}
+
+.sobre > div iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--cinza-medio);
+    color: var(--branco);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+footer strong {
+    color: var(--verde-limao);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    .sobre {
+        padding: 30px 15px;
+    }
+}
+
+/* estilo-home.css */
+
+/* Paleta de cores */
+:root {
+  --azul-escuro: #10454F;
+  --verde-limao: #BDE038;
+  --verde-oliva: #A3AB78;
+  --branco: #fff;
+  --cinza-claro: #f4f4f4;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, var(--verde-oliva), var(--azul-escuro));
+  color: var(--branco);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: var(--azul-escuro);
+  padding: 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-size: 2.4rem;
+  color: var(--verde-limao);
+  flex: 1 1 300px;
+  text-shadow: 0 0 8px var(--verde-limao);
+}
+
+nav {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--verde-limao);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+  white-space: nowrap;
+  box-shadow: 0 0 5px transparent;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: var(--verde-limao);
+  color: var(--azul-escuro);
+  box-shadow: 0 0 10px var(--verde-limao);
+  outline: none;
+}
+
+main {
+  flex: 1;
+  padding: 60px 20px 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+}
+
+main h2 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  text-shadow: 0 0 6px var(--verde-limao);
+}
+
+main p {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+main p:last-child {
+  margin-bottom: 0;
+}
+
+footer {
+  background-color: var(--azul-escuro);
+  text-align: center;
+  padding: 20px 15px;
+  font-size: 0.95rem;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+  color: var(--verde-limao);
+}
+
+footer p {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Responsividade */
+@media (max-width: 720px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  header h1 {
+    flex: unset;
+    font-size: 2rem;
+  }
+
+  main {
+    padding: 40px 15px 30px 15px;
+    border-radius: 15px;
+  }
+
+  main h2 {
+    font-size: 2rem;
+  }
+
+  main p {
+    font-size: 1.1rem;
+  }
+}
+
+/* estilo-playlist.css */
+
+/* Paleta de cores */
+:root {
+  --azul-escuro: #10454F;
+  --cinza-azulado: #506266;
+  --cinza-medio: #818274;
+  --verde-limao: #BDE038;
+  --branco: #fff;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--cinza-azulado);
+  color: var(--branco);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container para centralizar conteúdo */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background-color: var(--azul-escuro);
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  color: var(--verde-limao);
+  font-size: 2rem;
+  flex: 1 1 300px;
+}
+
+nav ul.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  flex: 1 1 300px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+nav ul.nav-links li a {
+  color: var(--verde-limao);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul.nav-links li a:hover,
+nav ul.nav-links li a[aria-current="page"] {
+  background-color: var(--verde-limao);
+  color: var(--azul-escuro);
+}
+
+/* Main */
+main {
+  flex-grow: 1;
+  padding: 40px 0;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: var(--verde-limao);
+}
+
+.intro p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--branco);
+}
+
+/* Lista de playlists */
+.playlists-list ul {
+  list-style: none;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.playlists-list ul li {
+  background-color: var(--cinza-medio);
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.playlists-list ul li a {
+  color: var(--verde-limao);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.playlists-list ul li a:hover {
+  color: var(--branco);
+  text-decoration: underline;
+}
+
+.playlists-list ul li:hover {
+  background-color: var(--verde-limao);
+  color: var(--azul-escuro);
+}
+
+.playlists-list ul li:hover a {
+  color: var(--azul-escuro);
+}
+
+/* Footer */
+footer {
+  background-color: var(--azul-escuro);
+  text-align: center;
+  padding: 20px 0;
+  color: var(--branco);
+  font-size: 1rem;
+}
+
+footer strong {
+  color: var(--verde-limao);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul.nav-links {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .intro h2 {
+    font-size: 1.8rem;
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background-color: var(--cinza-azulado, #506266); /* exemplo, ajuste conforme o seu CSS */
+}
+
+.logo {
+  width: 50px;   /* tamanho ideal, pode ajustar */
+  height: auto;
+  display: block;
+}
+
+.logo-link {
+  display: inline-block;
+}
