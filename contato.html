@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato - Rádio Dg</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>📬 Contato | Rádio Dg</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 <header>
   <a href="home.html" class="logo-link">
-    <img src="logo.png" alt="Logo MixBeat" class="logo">
+    <img src="logo.png" alt="Logo MixBeat" class="logo" />
   </a>
   <h1>📻 Dg</h1>
   <nav>
@@ -18,38 +18,42 @@
       <li><a href="playlist.html">🎵 Playlist</a></li>
       <li><a href="bandas.html">🎸 Bandas</a></li>
       <li><a href="destaques.html">✨ Destaques</a></li>
-      <li><a href="contato.html">📬 Contato</a></li>
+      <li><a href="contato.html" class="ativo">📬 Contato</a></li>
     </ul>
   </nav>
 </header>
 
-
+<main>
   <section class="hero">
-    <h2>Entre em contato conosco! ✉️</h2>
-    <p>Tem alguma sugestão, elogio ou crítica? Mande sua mensagem e fale com a nossa equipe! 💬</p>
+    <h2>✉️ Entre em contato conosco!</h2>
+    <p>Tem alguma sugestão, elogio ou crítica? Mande sua mensagem e fale direto com a nossa equipe! 💬</p>
   </section>
 
-  <section class="sobre">
+  <section class="form-contato-section">
     <h3>📨 Formulário de Contato</h3>
-    <form action="#" method="post" class="form-contato">
+    <!-- action removido para evitar erro 405 -->
+    <form method="post" class="form-contato" novalidate>
       <label for="nome">👤 Nome completo:</label>
-      <input type="text" id="nome" name="nome" required>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
 
       <label for="email">📧 E-mail:</label>
-      <input type="email" id="email" name="email" required>
+      <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required />
 
       <label for="assunto">📝 Assunto:</label>
-      <input type="text" id="assunto" name="assunto">
+      <input type="text" id="assunto" name="assunto" placeholder="Sobre o que deseja falar?" />
 
       <label for="mensagem">💌 Mensagem:</label>
-      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+      <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
 
       <button type="submit" class="botao">Enviar mensagem 🚀</button>
     </form>
   </section>
+</main>
 
-  <footer>
-    <p>&copy; 2025 <strong>Rádio Dg</strong>. Todos os direitos reservados.</p>
-  </footer>
+<footer>
+  <p>© 2025 <strong>Rádio Dg</strong>. Todos os direitos reservados 🎵</p>
+</footer>
+<script src="script.js" defer></script>
+
 </body>
 </html>

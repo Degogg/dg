@@ -2,161 +2,15 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="stylesheet" href="style.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>🎧 Início | Rádio Dg</title>
-
-  <style>
-    /* Paleta de cores */
-    :root {
-      --azul-escuro: #10454F;
-      --verde-limao: #BDE038;
-      --verde-oliva: #A3AB78;
-      --branco: #fff;
-      --cinza-claro: #f4f4f4;
-    }
-
-    /* Reset básico */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, var(--verde-oliva), var(--azul-escuro));
-      color: var(--branco);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    header {
-      background-color: var(--azul-escuro);
-      padding: 20px 40px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    }
-
-    header h1 {
-      font-size: 2.4rem;
-      color: var(--verde-limao);
-      flex: 1 1 300px;
-      text-shadow: 0 0 8px var(--verde-limao);
-    }
-
-    nav {
-      flex: 1 1 400px;
-      display: flex;
-      justify-content: flex-end;
-      gap: 25px;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: var(--verde-limao);
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 1.1rem;
-      padding: 6px 10px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      white-space: nowrap;
-      box-shadow: 0 0 5px transparent;
-    }
-
-    nav a:hover,
-    nav a:focus {
-      background-color: var(--verde-limao);
-      color: var(--azul-escuro);
-      box-shadow: 0 0 10px var(--verde-limao);
-      outline: none;
-    }
-
-    main {
-      flex: 1;
-      padding: 60px 20px 40px 20px;
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-      background: rgba(0, 0, 0, 0.2);
-      border-radius: 20px;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(6px);
-    }
-
-    main h2 {
-      font-size: 2.8rem;
-      margin-bottom: 15px;
-      text-shadow: 0 0 6px var(--verde-limao);
-    }
-
-    main p {
-      font-size: 1.3rem;
-      margin-bottom: 15px;
-      line-height: 1.5;
-    }
-
-    main p:last-child {
-      margin-bottom: 0;
-    }
-
-    footer {
-      background-color: var(--azul-escuro);
-      text-align: center;
-      padding: 20px 15px;
-      font-size: 0.95rem;
-      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
-      color: var(--verde-limao);
-    }
-
-    footer p {
-      margin: 0;
-      font-weight: 600;
-    }
-
-    /* Responsividade */
-    @media (max-width: 720px) {
-      header {
-        justify-content: center;
-        text-align: center;
-      }
-
-      nav {
-        justify-content: center;
-        gap: 15px;
-        margin-top: 10px;
-      }
-
-      header h1 {
-        flex: unset;
-        font-size: 2rem;
-      }
-
-      main {
-        padding: 40px 15px 30px 15px;
-        border-radius: 15px;
-      }
-
-      main h2 {
-        font-size: 2rem;
-      }
-
-      main p {
-        font-size: 1.1rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header>
+
+<header class="scroll-in">
   <a href="home.html" class="logo-link">
-    <img src="logo.png" alt="Logo MixBeat" class="logo">
+    <img src="logo.png" alt="Logo MixBeat" class="logo" />
   </a>
   <h1>📻 Dg</h1>
   <nav>
@@ -170,15 +24,41 @@
   </nav>
 </header>
 
+<main>
+  <section class="hero fade-in">
+    <h2>🔊 Sinta a batida da sua vibe!</h2>
+    <p><strong>Curta o melhor do rock alternativo, pop moderno e sons que fazem seu coração vibrar.</strong> 🌈💥</p>
+    <a href="playlist.html" class="botao">🎧 Ouça Agora</a>
+  </section>
 
-  <main>
-    <h2>Sinta a batida da sua vibe! 🔊</h2>
-    <p>Curta o melhor do rock alternativo, pop moderno e sons que fazem seu coração vibrar. 🌈💥</p>
-    <p>Explore nossas playlists, conheça bandas incríveis e fique por dentro dos destaques da semana! 🚀</p>
-  </main>
+  <section class="scroll-in">
+    <h3>🌟 Destaques da Semana</h3>
+    <ul>
+      <li>🔥 Banda revelação: *Neon Waves*</li>
+      <li>🎤 Entrevista exclusiva com *DJ Lunna*</li>
+      <li>🚀 Nova playlist "Energia Pura!" no ar</li>
+    </ul>
+  </section>
 
-  <footer>
-    <p>© 2025 Rádio Dg - Todos os direitos reservados 🎧</p>
-  </footer>
+  <section class="fade-in">
+    <h3>🎵 O que você encontra aqui</h3>
+    <p>🎸 Uma curadoria que mistura sons pulsantes com clássicos imortais.</p>
+    <p>💬 Interações em tempo real com os ouvintes.</p>
+    <p>📡 Programação feita com alma e coração musical.</p>
+  </section>
+
+  <section class="scroll-in">
+    <h3>🗣️ Fale com a gente</h3>
+    <p>Tem uma sugestão de música ou quer ver sua banda favorita aqui?</p>
+    <a href="contato.html" class="botao">📨 Enviar sugestão</a>
+  </section>
+</main>
+
+<footer class="scroll-in">
+  <p>© 2025 Rádio Dg - Todos os direitos reservados 🎧</p>
+  <p>Desenvolvido por <strong>Dego da Silva Borges</strong></p>
+</footer>
+
+<script src="forms.js"></script>
 </body>
 </html>
